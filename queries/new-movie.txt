@@ -1,0 +1,1 @@
+ INSERT INTO movies (title_type, primary_title, runtime_minutes, genres) VALUES ('short','funny gang',15,'comedy');
