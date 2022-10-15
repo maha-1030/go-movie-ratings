@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "825bc3df-3d80-4b06-95e0-6861956cde59",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Movie\": {\r\n        \"Tconst\": \"tt0000021\",\r\n        \"TitleType\": \"short\",\r\n        \"PrimaryTitle\": \"funny gang\",\r\n        \"RuntimeMinutes\": 15,\r\n        \"Genres\": \"comedy\"\r\n    },\r\n    \"Rating\": {\r\n        \"Tconst\": \"tt0000021\",\r\n        \"AverageRating\": 8,\r\n        \"NumVotes\": 99\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/new-movie",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"new-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Longest Duration Movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/longest-duration-movies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"longest-duration-movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
